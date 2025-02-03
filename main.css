@@ -1,0 +1,296 @@
+
+.navbar-brand .logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+}
+/* Style for the dropdown menu */
+.dropdown-menu {
+    background-color: #f8f9fa; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0; /* Remove default padding */
+}
+
+.dropdown-menu li a {
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Padding */
+    display: block; /* Make links block-level */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #e9ecef; /* Hover background color */
+}
+
+/* Ensure the dropdown appears on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.biography-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+    padding: 20px;
+}
+
+/* Image Styling */
+.biography-image {
+    flex: 1;
+    max-width: 30%;
+}
+
+.biography-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* Text Styling */
+.biography-text {
+    flex: 2;
+    max-width: 70%;
+}
+
+.biography-text h1 {
+    font-size: 24px;
+    font-style: italic; /* Italic headline */
+    margin-bottom: 15px;
+}
+
+.biography-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Right-aligned image */
+.biography-container.right {
+    flex-direction: row-reverse; /* Puts the image on the right */
+}
+
+/* Left-aligned image */
+.biography-container.left {
+    flex-direction: row; /* Puts the image on the left */
+}
+.biography-image img {
+    width: 200px;  /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: contain; /* Ensures the image scales properly without distortion */
+    display: block;
+}
+.article-title a {
+    color: black;  /* Default color */
+    text-decoration: none; /* Removes underline from the link */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.article-title a:hover {
+    color: #f15640; /* Color when hovered */
+}
+#research {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-heading p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.article-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-title a:hover {
+    color: #f15640; /* Change to your desired hover color */
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.article-summary {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #f15640;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #d14432;
+}
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+}
+
+/* Image Slideshow */
+.image-slideshow {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+    overflow: hidden;
+}
+
+.image-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.image-slideshow img.active {
+    opacity: 1;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+}
+/* General Styles */
+
+
+/* Footer Styles */
+footer {
+    background-color: #f15640; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Add some padding for spacing */
+    width: 100%; /* Ensure the footer spans the full width */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+@media (max-width: 767px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+}
+/* Default styling for larger screens */
+.biography-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.biography-image {
+    flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+.biography-text {
+    flex: 1;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 767px) {
+    .biography-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .biography-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .biography-text {
+        width: 100%;
+    }
+}
+.biography-image img {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
